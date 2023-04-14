@@ -28,5 +28,5 @@ function getToppingPrice(){
 
 function getTotal(){
     var total= getSizePrice()+getToppingPrice();
-    alert('Total:'+total);
+    document.getElementById("total").innerHTML= "Total Price:$" + total;
 }
