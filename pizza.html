@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>pizza</title>
+<link rel="stylesheet" type="text/css" href="pizza.css">
+</head>
+<body>
+<h1>Yummy Pizza</h1>
+<form id="orderform" onsubmit="return false;">
+<p>Select the pizza size:</p>
+<div>
+<input type="radio" name="size" value="small" id="small" checked>
+<label for="small">Small</label><br>
+<input type="radio" name="size" value="medium" id="medium">
+<label for="medium">Medium</label><br>
+<input type="radio" name="size" value="large" id="large">
+<label for="large">Large</label>
+</div>
+<p>Select the pizza toppings:</p>
+<div>
+<select name="toppings" id="toppings">
+    <option value="noToppings" selected>No toppings</option>
+    <option value="oneTopping" >One topping</option>
+    <option value="twoToppings" >Two toppings</option>
+</select>
+</div>
+<br>
+<button type="submit" id="submit" onclick="getTotal();">Place order</button>
+<br>
+</form>    
+<script src="pizza.js"></script>
+</body>
+
+</html>
